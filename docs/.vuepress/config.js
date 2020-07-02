@@ -27,39 +27,84 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
-    nav: [
-      {
-        text: 'Guide',
-        link: '/guide/',
-      },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
-    ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
+    locales: {
+      repo: '',
+        editLinks: false,
+        docsDir: '',
+        editLinkText: '',
+        lastUpdated: false,
+      '/': {
+        
+        nav: [
+          {
+            text: 'Guide',
+            link: '/guide/',
+          },
+          {
+            text: 'Config',
+            link: '/config/'
+          },
+          {
+            text: 'VuePress',
+            link: 'https://v1.vuepress.vuejs.org'
+          }
+        ],
+        sidebar: {
+          '/guide/': [
+            {
+              title: 'Guide',
+              collapsable: false,
+              children: [
+                '',
+                'using-vue',
+              ]
+            }
+          ],
         }
-      ],
+      },
+      '/es/': {
+        nav: [
+          {
+            text: 'Guia',
+            link: '/guide/',
+          },
+          {
+            text: 'Configuracion',
+            link: '/config/'
+          },
+          {
+            text: 'VuePress',
+            link: 'https://v1.vuepress.vuejs.org'
+          }
+        ],
+        sidebar: {
+          '/guide/': [
+            {
+              title: 'Guia',
+              collapsable: false,
+              children: [
+                '',
+                'using-vue',
+              ]
+            }
+          ],
+        }
+      }
     }
   },
-
+    
+  locales: {
+    '/': {
+      lang: 'en-US', // this will be set as the lang attribute on <html>
+      title: 'VuePress',
+      description: 'Vue-powered Static Site Generator'
+    },
+    '/es/': {
+      lang: 'es-CH',
+      title: 'VuePress',
+      description: 'Vue español'
+    }
+  },
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
