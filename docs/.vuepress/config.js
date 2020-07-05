@@ -34,8 +34,11 @@ module.exports = {
         editLinkText: '',
         lastUpdated: false,
       '/': {
-        
         nav: [
+          {
+            text: 'JavaScript',
+            link: '/js/'
+          },
           {
             text: 'Guide',
             link: '/guide/',
@@ -65,12 +68,16 @@ module.exports = {
       '/es/': {
         nav: [
           {
+            text: 'JavaScript',
+            link: '/es/js/'
+          },
+          {
             text: 'Guia',
-            link: '/guide/',
+            link: '/es/guide/',
           },
           {
             text: 'Configuracion',
-            link: '/config/'
+            link: '/es/config/'
           },
           {
             text: 'VuePress',
@@ -78,13 +85,23 @@ module.exports = {
           }
         ],
         sidebar: {
-          '/guide/': [
+          '/es/guide/': [
             {
               title: 'Guia',
               collapsable: false,
               children: [
                 '',
                 'using-vue',
+              ]
+            }
+          ],
+          '/es/js/': [
+            {
+              title: 'JavaScript',
+              collapsable: false,
+              children: [
+                '',
+                'functions',
               ]
             }
           ],
