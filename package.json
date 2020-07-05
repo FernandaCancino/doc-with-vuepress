@@ -10,8 +10,7 @@
   "repository": "https://github.com/FernandaCancino/doc-with-vuepress/demo-vuepress",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "[my framework] build --output public",
-    "build2": "vuepress build docs"
+    "build": "vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {
