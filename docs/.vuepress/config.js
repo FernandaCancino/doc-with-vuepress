@@ -36,6 +36,14 @@ module.exports = {
       '/': {
         nav: [
           {
+            text: 'FP js',
+            link: '/functional-programming/'
+          },
+          {
+            text: 'imperative-declarative',
+            link: '/imperative-declarative/'
+          },
+          {
             text: 'JavaScript',
             link: '/js/'
           },
@@ -68,12 +76,24 @@ module.exports = {
       '/es/': {
         nav: [
           {
+            text: 'FP JS',
+            link: '/es/functional-programming/'
+          },
+          {
+            text: 'imperative-declarative',
+            link: '/imperative-declarative/'
+          },
+          {
             text: 'JavaScript',
             link: '/es/js/'
           },
           {
             text: 'Guia',
             link: '/es/guide/',
+          },
+          {
+            text: 'prog',
+            link: '/es/imperative-declarative/',
           },
           {
             text: 'Configuracion',
@@ -98,6 +118,26 @@ module.exports = {
           '/es/js/': [
             {
               title: 'JavaScript',
+              collapsable: false,
+              children: [
+                '',
+                'functions',
+              ]
+            }
+          ],
+          '/es/imperative-declarative/': [
+            {
+              title: 'Declaracion imperativa vs declarativa',
+              collapsable: false,
+              children: [
+                '',
+                'functions',
+              ]
+            }
+          ],
+          '/es/functional-programming/': [
+            {
+              title: 'Functional Programming',
               collapsable: false,
               children: [
                 '',
