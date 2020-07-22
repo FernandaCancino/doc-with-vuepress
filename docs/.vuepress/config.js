@@ -40,25 +40,17 @@ module.exports = {
             link: '/functional-programming/'
           },
           {
-            text: 'imperative-declarative',
-            link: '/imperative-declarative/'
-          },
-          {
             text: 'JavaScript',
             link: '/js/'
           },
           {
-            text: 'Guide',
-            link: '/guide/',
+            text: 'Prog',
+            link: '/imperative-declarative/'
           },
           {
-            text: 'Config',
-            link: '/config/'
+            text: 'Web Components',
+            link: '/widgets/'
           },
-          {
-            text: 'VuePress',
-            link: 'https://v1.vuepress.vuejs.org'
-          }
         ],
         sidebar: {
           '/guide/': [
@@ -80,29 +72,17 @@ module.exports = {
             link: '/es/functional-programming/'
           },
           {
-            text: 'imperative-declarative',
-            link: '/imperative-declarative/'
-          },
-          {
             text: 'JavaScript',
             link: '/es/js/'
           },
           {
-            text: 'Guia',
-            link: '/es/guide/',
+            text: 'Prog',
+            link: '/es/imperative-declarative/'
           },
           {
-            text: 'prog',
-            link: '/es/imperative-declarative/',
+            text: 'Web Components',
+            link: '/es/widgets/'
           },
-          {
-            text: 'Configuracion',
-            link: '/es/config/'
-          },
-          {
-            text: 'VuePress',
-            link: 'https://v1.vuepress.vuejs.org'
-          }
         ],
         sidebar: {
           '/es/guide/': [
@@ -141,7 +121,16 @@ module.exports = {
               collapsable: false,
               children: [
                 '',
-                'functions',
+              ]
+            }
+          ],
+          '/es/widgets/': [
+            {
+              title: 'Widgets',
+              collapsable: false,
+              children: [
+                '',
+                'hooks'
               ]
             }
           ],
