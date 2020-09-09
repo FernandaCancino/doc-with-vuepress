@@ -1,10 +1,10 @@
-const { description } = require('../../package')
+const { description } = require("../../package");
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: "Vuepress Docs Boilerplate",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -16,9 +16,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
   ],
 
   /**
@@ -28,134 +31,119 @@ module.exports = {
    */
   themeConfig: {
     locales: {
-      repo: '',
-        editLinks: false,
-        docsDir: '',
-        editLinkText: '',
-        lastUpdated: false,
-      '/': {
+      repo: "",
+      editLinks: false,
+      docsDir: "",
+      editLinkText: "",
+      lastUpdated: false,
+      "/": {
         nav: [
           {
-            text: 'FP js',
-            link: '/functional-programming/'
+            text: "FP js",
+            link: "/functional-programming/",
           },
           {
-            text: 'JavaScript',
-            link: '/js/'
+            text: "JavaScript",
+            link: "/js/",
           },
           {
-            text: 'Prog',
-            link: '/imperative-declarative/'
+            text: "Prog",
+            link: "/imperative-declarative/",
           },
           {
-            text: 'Web Components',
-            link: '/widgets/'
+            text: "Web Components",
+            link: "/widgets/",
           },
         ],
         sidebar: {
-          '/guide/': [
+          "/guide/": [
             {
-              title: 'Guide',
+              title: "Guide",
               collapsable: false,
-              children: [
-                '',
-                'using-vue',
-              ]
-            }
+              children: ["", "using-vue"],
+            },
           ],
-        }
+        },
       },
-      '/es/': {
+      "/es/": {
         nav: [
           {
-            text: 'FP JS',
-            link: '/es/functional-programming/'
+            text: "JavaScript",
+            link: "/es/js/",
           },
           {
-            text: 'JavaScript',
-            link: '/es/js/'
+            text: "Web Components",
+            link: "/es/widgets/",
           },
           {
-            text: 'Prog',
-            link: '/es/imperative-declarative/'
+            text: "cadena...",
+            link: "/es/cadena-herramientas/",
           },
           {
-            text: 'Web Components',
-            link: '/es/widgets/'
+            text: "GraphQl",
+            link: "/es/graphql/",
           },
         ],
         sidebar: {
-          '/es/guide/': [
+          "/es/guide/": [
             {
-              title: 'Guia',
+              title: "Guia",
+              collapsable: false,
+              children: ["", "using-vue"],
+            },
+          ],
+          "/es/js/": [
+            {
+              title: "JavaScript",
               collapsable: false,
               children: [
-                '',
-                'using-vue',
-              ]
-            }
+                "",
+                "functions",
+                "functional-programming",
+                "imperative-declarative",
+              ],
+            },
           ],
-          '/es/js/': [
+          "/es/imperative-declarative/": [
             {
-              title: 'JavaScript',
+              title: "Declaracion imperativa vs declarativa",
               collapsable: false,
-              children: [
-                '',
-                'functions',
-              ]
-            }
+              children: ["", "functions"],
+            },
           ],
-          '/es/imperative-declarative/': [
+          "/es/widgets/": [
             {
-              title: 'Declaracion imperativa vs declarativa',
+              title: "Widgets",
               collapsable: false,
-              children: [
-                '',
-                'functions',
-              ]
-            }
+              children: ["", "hooks"],
+            },
           ],
-          '/es/functional-programming/': [
+          "/es/graphql/": [
             {
-              title: 'Functional Programming',
+              title: "GraphQl",
               collapsable: false,
-              children: [
-                '',
-              ]
-            }
+              children: [""],
+            },
           ],
-          '/es/widgets/': [
-            {
-              title: 'Widgets',
-              collapsable: false,
-              children: [
-                '',
-                'hooks'
-              ]
-            }
-          ],
-        }
-      }
-    }
-  },
-    
-  locales: {
-    '/': {
-      lang: 'en-US', // this will be set as the lang attribute on <html>
-      title: 'VuePress',
-      description: 'Vue-powered Static Site Generator'
+        },
+      },
     },
-    '/es/': {
-      lang: 'es-CH',
-      title: 'VuePress',
-      description: 'Vue español'
-    }
+  },
+
+  locales: {
+    "/": {
+      lang: "en-US", // this will be set as the lang attribute on <html>
+      title: "VuePress",
+      description: "Vue-powered Static Site Generator",
+    },
+    "/es/": {
+      lang: "es-CH",
+      title: "VuePress",
+      description: "Vue español",
+    },
   },
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
-}
+  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+};
