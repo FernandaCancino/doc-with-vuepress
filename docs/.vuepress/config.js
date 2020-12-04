@@ -46,14 +46,6 @@ module.exports = {
             text: "JavaScript",
             link: "/js/",
           },
-          {
-            text: "Prog",
-            link: "/imperative-declarative/",
-          },
-          {
-            text: "Web Components",
-            link: "/widgets/",
-          },
         ],
         sidebar: {
           "/guide/": [
@@ -61,6 +53,13 @@ module.exports = {
               title: "Guide",
               collapsable: false,
               children: ["", "using-vue"],
+            },
+          ],
+          "/methodologies/": [
+            {
+              title: "Methodologies",
+              collapsable: false,
+              children: ["", "BEM"],
             },
           ],
         },
@@ -82,6 +81,10 @@ module.exports = {
           {
             text: "GraphQl",
             link: "/es/graphql/",
+          },
+          {
+            text: "Methodologies",
+            link: "/es/methodologies/",
           },
         ],
         sidebar: {
@@ -123,6 +126,13 @@ module.exports = {
               title: "GraphQl",
               collapsable: false,
               children: [""],
+            },
+          ],
+          "/es/methodologies/": [
+            {
+              title: "Methodologies",
+              collapsable: false,
+              children: ["", "BEM"],
             },
           ],
         },
