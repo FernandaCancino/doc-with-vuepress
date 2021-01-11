@@ -238,7 +238,7 @@ Se utilizan cuando el valor del modifier es importante. Ejemplo: un menú con el
     <!-- El element button tiene el modifier 'size-m'-->
     <button class="search-form__button search-form__button--size-m">Search</button>
 </form>
-````
+```
 
 - No se pueden usar dos modifieres idénticos con diferentes valores simultáneamente.
 ```html
